@@ -1,0 +1,222 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="ru.rostell"
+4    android:versionCode="6400"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:3:5-67
+11-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:3:22-64
+12    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+12-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:4:5-81
+12-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:4:22-79
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:5:5-72
+13-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:5:22-69
+14    <uses-permission android:name="android.permission.READ_SMS" />
+14-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:6:5-66
+14-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:6:22-64
+15    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+15-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:7:5-76
+15-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:7:22-74
+16    <uses-permission android:name="android.permission.CALL_PHONE" />
+16-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:8:5-68
+16-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:8:22-66
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:9:5-74
+17-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:9:22-72
+18    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+18-->[:react-native-android-sms-listener] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-android-sms-listener\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-70
+18-->[:react-native-android-sms-listener] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-android-sms-listener\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-67
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->[:react-native-fs] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+19-->[:react-native-fs] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-fs\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+21-->[:react-native-launcher-kit] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-launcher-kit\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-77
+21-->[:react-native-launcher-kit] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-launcher-kit\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-74
+22    <!--
+23    This manifest file is used only by Gradle to configure debug-only capabilities
+24    for React Native Apps.
+25    -->
+26    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+26-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:16:5-78
+26-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:16:22-75
+27    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+27-->[com.facebook.flipper:flipper:0.201.0] C:\Users\Neural\.gradle\caches\transforms-3\9b2c28bd5719adb7e465469e2ca76c12\transformed\jetified-flipper-0.201.0\AndroidManifest.xml:14:5-76
+27-->[com.facebook.flipper:flipper:0.201.0] C:\Users\Neural\.gradle\caches\transforms-3\9b2c28bd5719adb7e465469e2ca76c12\transformed\jetified-flipper-0.201.0\AndroidManifest.xml:14:22-73
+28    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+28-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\Neural\.gradle\caches\transforms-3\7d00a3d973e62c64256363b4cb614082\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
+28-->[com.google.android.gms:play-services-iid:17.0.0] C:\Users\Neural\.gradle\caches\transforms-3\7d00a3d973e62c64256363b4cb614082\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:22-79
+29
+30    <permission
+30-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+31        android:name="ru.rostell.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+31-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+32        android:protectionLevel="signature" />
+32-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+33
+34    <uses-permission android:name="ru.rostell.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+34-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+34-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+35    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+35-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Neural\.gradle\caches\transforms-3\7347c325151bfcdf75aa8769efa26987\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:5-110
+35-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Neural\.gradle\caches\transforms-3\7347c325151bfcdf75aa8769efa26987\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:22-107
+36
+37    <application
+37-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:10:5-30:19
+38        android:name="ru.rostell.MainApplication"
+38-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:11:7-38
+39        android:allowBackup="false"
+39-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:15:7-34
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.9.0] C:\Users\Neural\.gradle\caches\transforms-3\13659b94c66de92d98d7f8af61234b95\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="true"
+43        android:icon="@mipmap/ic_launcher"
+43-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:13:7-41
+44        android:label="@string/app_name"
+44-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:12:7-39
+45        android:requestLegacyExternalStorage="true"
+45-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:17:7-50
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:14:7-52
+47        android:theme="@style/AppTheme"
+47-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:16:7-38
+48        android:usesCleartextTraffic="true" >
+48-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\debug\AndroidManifest.xml:6:9-44
+49        <activity
+49-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:18:7-29:18
+50            android:name="ru.rostell.MainActivity"
+50-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:19:9-37
+51            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+51-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:21:9-118
+52            android:exported="true"
+52-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:24:9-32
+53            android:label="@string/app_name"
+53-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:20:9-41
+54            android:launchMode="singleTask"
+54-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:22:9-40
+55            android:windowSoftInputMode="adjustResize" >
+55-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:23:9-51
+56            <intent-filter>
+56-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:25:9-28:25
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:26:13-65
+57-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:26:21-62
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:27:13-73
+59-->D:\Porgramming\GosAugust\GosMobileAugust\android\app\src\main\AndroidManifest.xml:27:23-70
+60            </intent-filter>
+61        </activity>
+62        <activity
+62-->[:react-native-device-number] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:20
+63            android:name="com.reactlibrary.devicenumber.DeviceNumberActivity"
+63-->[:react-native-device-number] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-78
+64            android:noHistory="true"
+64-->[:react-native-device-number] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+65            android:theme="@android:style/Theme.Dialog" >
+65-->[:react-native-device-number] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-device-number\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-56
+66        </activity>
+67
+68        <provider
+68-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+69            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+69-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-83
+70            android:authorities="ru.rostell.fileprovider"
+70-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-64
+71            android:exported="false"
+71-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+72            android:grantUriPermissions="true" >
+72-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+73            <meta-data
+73-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:63
+74                android:name="android.support.FILE_PROVIDER_PATHS"
+74-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+75                android:resource="@xml/file_provider_paths" />
+75-->[:react-native-webview] D:\Porgramming\GosAugust\GosMobileAugust\node_modules\react-native-webview\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-60
+76        </provider>
+77
+78        <activity
+78-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:19:9-21:40
+79            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+79-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:20:13-77
+80            android:exported="false" />
+80-->[com.facebook.react:react-android:0.73.6] C:\Users\Neural\.gradle\caches\transforms-3\e1231b5b187cb579b629117f9511a862\transformed\jetified-react-android-0.73.6-debug\AndroidManifest.xml:21:13-37
+81        <activity
+81-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+82            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+82-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+83            android:excludeFromRecents="true"
+83-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+84            android:exported="false"
+84-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+85            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+85-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+86        <!--
+87            Service handling Google Sign-In user revocation. For apps that do not integrate with
+88            Google Sign-In, this service will never be started.
+89        -->
+90        <service
+90-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+91            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+91-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+92            android:exported="true"
+92-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+93            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+93-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+94            android:visibleToInstantApps="true" />
+94-->[com.google.android.gms:play-services-auth:18.1.0] C:\Users\Neural\.gradle\caches\transforms-3\b4dd1eafa9eb6f9dde2f444531b2f108\transformed\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+95
+96        <activity
+96-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+97            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+97-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+98            android:exported="false"
+98-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+99            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+99-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\2c0c83c8efa6a64f19300284f278e751\transformed\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+100
+101        <meta-data
+101-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+102            android:name="com.google.android.gms.version"
+102-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+103            android:value="@integer/google_play_services_version" />
+103-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Neural\.gradle\caches\transforms-3\9f976bfdbbebc8d18420cdb3000971cb\transformed\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+104
+105        <provider
+105-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106            android:name="androidx.startup.InitializationProvider"
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107            android:authorities="ru.rostell.androidx-startup"
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108            android:exported="false" >
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109            <meta-data
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111                android:value="androidx.startup" />
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Neural\.gradle\caches\transforms-3\faa3592d2fc203d6c74b9a5f601058a1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112            <meta-data
+112-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114                android:value="androidx.startup" />
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Neural\.gradle\caches\transforms-3\71b91ea8216105cda74b0317da307340\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115        </provider>
+116
+117        <meta-data
+117-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:12:9-14:37
+118            android:name="com.facebook.soloader.enabled"
+118-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:13:13-57
+119            android:value="false" />
+119-->[com.facebook.soloader:soloader:0.10.5] C:\Users\Neural\.gradle\caches\transforms-3\03d018e18e7118763cc731de8f689ba0\transformed\jetified-soloader-0.10.5\AndroidManifest.xml:14:13-34
+120    </application>
+121
+122</manifest>
