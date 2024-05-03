@@ -16,11 +16,10 @@ class Images{
         });
         return formData
     }
-    //https://gosserverark-production.up.railway.app
     async sendImages(formData){
         console.log("send")
         try {
-            const response = fetch("https://gosserverark-production.up.railway.app/image/add", {
+            const response = fetch("https://gosserver1053-production.up.railway.app/image/add", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'multipart/form-data',

